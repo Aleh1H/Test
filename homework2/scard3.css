@@ -1,0 +1,43 @@
+.box3{
+    width: 900px;
+    height: 550px;
+    background: #08bcd4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    width: 45%;
+    height: 80%;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inbox{
+    width: 97%;
+    height: 27%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.im{
+    font-size: 30px;
+    color: #868694;
+    }
+h4{
+    color: #eaca2b;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.txt{
+    width: 70%;
+    color: #868694;
+
+}

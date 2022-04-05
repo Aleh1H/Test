@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+.box2{
+    width: 70%;
+    height: 500px;
+    background: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h2{
+    display: block;
+    /*width: 100%;*/
+    margin-top: 35px;
+    margin-bottom: 0;
+    font-weight: 550;
+    text-align: center;
+}
+.wrap{ width: 95%;
+    height: 450px;
+    display: flex;
+    /*border: 1px solid black;*/
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.cards{
+    width: 22%;
+    height: 80%;
+    border: 1px solid lightgray;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    background: #f5e17e;
+    }
+
+.pick{
+    display: block;
+    color: lightgray;
+    font-size: 30px;
+    margin-top: 15%;
+   }
+
+h4{
+    font-size: 25px;
+    color: #b052bb;
+    }
+.txt{
+    text-align: center;
+    color: #868694;
+    font-size: 18px;
+}
+
+.more{
+    width: 65%;
+    height: 47px;
+    box-sizing: border-box;
+    background: cornflowerblue;
+    font-size: 23px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    /*padding-top: 10px;*/
+}
