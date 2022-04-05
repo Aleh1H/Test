@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     align-items: center;
     display: flex;
-    background: lightgray;
+    background: aliceblue;
 }
 .name{
     font-family: "Times New Roman", serif;
