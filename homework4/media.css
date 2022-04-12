@@ -1,0 +1,14 @@
+@media screen and (max-width: 900px){
+.subcontainer-b {
+flex-direction: column;
+}
+    .inercontainer-l{
+        width: 100%;
+    }
+.inercontainer-r{
+    width: 100%;
+}
+}
+
+
+

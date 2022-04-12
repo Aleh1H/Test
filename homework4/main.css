@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    height: 600px;
+}
+
+.subcontainer-a {
+    width: 100%;
+    height: 25%;
+    background: #b052bb;
+}
+
+.subcontainer-b {
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+.inercontainer-l {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inercontainer-r {
+    width: 25%;
+    height: 100%;
+    background: #ea642b;
+    display: flex;
+}
+
+.tworows-t {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.tworows-b {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.box {
+    width: calc(99% / 3);
+    height: 99%;
+    background: aquamarine;
+
+}
