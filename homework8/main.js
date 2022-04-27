@@ -63,15 +63,16 @@
 // list('lorem20', 3);
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-// function list(array){
-//     document.write(`<ul>`)
-//     for (const item of array){
-//         document.write(`<li>${}</li>`)
-//         console.log(item);
-//     }
-// }
-// let listOfItems = ['jhfg', 5, true, 'three', 25, 'react', 'text', false];
-// list(listOfItems);
+function list(array){
+    document.write(`<ul>`)
+    for (const item of array){
+        document.write(`<li>${item}</li>`)
+        console.log(item);
+    }
+    document.write(`</ul>`);
+}
+let listOfItems = ['jhfg', 5, true, 'three', 25, 'react', 'text', false];
+list(listOfItems);
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 // let listOfItems = [
@@ -102,14 +103,14 @@
 // document.write(smallnum(arnum));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-let arrey = [2, 5, 3, 7, 8, 11];
-
-function arsum(arrey){
-    let sum =0;
-    for (const item of arrey) {
-        sum += item;
-    }
-    return sum;
-}
-
-document.write(arsum(arrey));
+// let arrey = [2, 5, 3, 7, 8, 11];
+//
+// function arsum(arrey){
+//     let sum =0;
+//     for (const item of arrey) {
+//         sum += item;
+//     }
+//     return sum;
+// }
+//
+// document.write(arsum(arrey));
