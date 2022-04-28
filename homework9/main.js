@@ -143,12 +143,24 @@
 // console.log(random(20));
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-let arr = (arrey) =>{
-    let revarr = [];
-    for (let i = arrey.length-1; i>=0; i--){
-       revarr.push(arrey[i]);
-    }
-    return revarr;
+// let arr = (arrey) =>{
+//     let revarr = [];
+//     for (let i = arrey.length-1; i>=0; i--){
+//        revarr.push(arrey[i]);
+//     }
+//     return revarr;
+// }
+// let arnum = [2, 5, -3, 7, 8, -1000, 200];
+// console.log(arr(arnum));
+
+// -створити функцію, яка приймає масив з 2х об'єктів, та міняє їх місцями.
+let arr = (arrey) => {
+    let num = arrey[0];
+    arrey [0] = arrey [1];
+    arrey [1] = num;
+    return arrey;
 }
-let arnum = [2, 5, -3, 7, 8, -1000, 200];
+let arnum = [{name: 'Vasya', age: 25},
+    {name: 'Anya', age: 23},
+    ];
 console.log(arr(arnum));
