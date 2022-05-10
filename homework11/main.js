@@ -148,12 +148,13 @@ class Prince {
 }
 let prince = new Prince('David', 28, 27);
 
-for (const item in cinderellas){
-    if (item.footsize === item.shoe) {
-        console.log(cinderella[item]);
-    }
-}
+// for (const item in cinderellas){
+//     if (item.footsize === item.shoe) {
+//         console.log(cinderella[item]);
+//     }
+// }
 
+console.log(cinderellas.find(value => value.footsize === prince.shoe));
 
 
 
