@@ -140,21 +140,21 @@ new Cinderella('Oksana', 17, 26),
 // console.log(cinderellas);
 
 class Prince {
-    constructor(name, age, shoe) {
+    constructor(name, age, footsize) {
         this.name = name
         this.age = age
-        this.shoe = shoe;
+        this.footsize = footsize;
     }
 }
 let prince = new Prince('David', 28, 27);
 
-// for (const item in cinderellas){
-//     if (item.footsize === item.shoe) {
-//         console.log(cinderella[item]);
-//     }
-// }
+for (const item of cinderellas){
+    if (item.footsize === prince.footsize) {
+        console.log(item);
+    }
+}
 
-console.log(cinderellas.find(value => value.footsize === prince.shoe));
+// console.log(cinderellas.find(value => value.footsize === prince.shoe));
 
 
 
