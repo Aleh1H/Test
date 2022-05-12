@@ -37,10 +37,9 @@
 
 // 1) Напишіть код, який :
 // a) додає клас з назвою групи, елементу з ід main_header
-// const elem = document.createElement('main_header');
-// elem.innerText = 'Group name';
-// let header = document.getElementById('main_header');
-// header.appendChild(elem);
+let header = document.getElementById('main_header');
+header.classList.add('group_name')
+
 
 // b) робить шириниу елементу ul 400px
 // let ullist = document.getElementsByTagName('ul')
@@ -81,7 +80,8 @@
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
 // let ullist = document.getElementsByTagName('a');
 // for (const item of ullist){
-//     item.classList.add('element + ${item.innerText}')}
+//     item.classList.add(' element + ${item.innerText}')
+// }
 
 
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
