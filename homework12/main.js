@@ -54,8 +54,8 @@
 // }
 
 // d) отримує текст який зберігається в елементі з класом listElement2
-let cllinklist = document.getElementsByClassName('linkList');
-console.log(cllinklist[1].innerText);
+// let cllinklist = document.getElementsByClassName('linkList');
+// console.log(cllinklist[1].innerText);
 
 // e) отримує всі елементи li та змінює ім колір фону на сірий
 // let lilist = document.getElementsByTagName('li');
@@ -78,10 +78,10 @@ console.log(cllinklist[1].innerText);
 // }
 
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-// let ullist = document.getElementsByTagName('a');
-// for (const item of ullist){
-//     item.classList.add(' element + ${item.innerText}')
-// }
+let ullist = document.getElementsByTagName('a');
+for (const item of ullist){
+    item.classList.add(`element_${item.innerText}`)
+}
 
 
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
