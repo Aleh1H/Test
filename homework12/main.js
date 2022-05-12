@@ -37,8 +37,8 @@
 
 // 1) Напишіть код, який :
 // a) додає клас з назвою групи, елементу з ід main_header
-let header = document.getElementById('main_header');
-header.classList.add('group_name')
+// let header = document.getElementById('main_header');
+// header.classList.add('group_name')
 
 
 // b) робить шириниу елементу ul 400px
@@ -54,8 +54,8 @@ header.classList.add('group_name')
 // }
 
 // d) отримує текст який зберігається в елементі з класом listElement2
-// let cllinklist = document.getElementsByClassName('linkList');
-// console.log(cllinklist[1]);
+let cllinklist = document.getElementsByClassName('linkList');
+console.log(cllinklist[1].innerText);
 
 // e) отримує всі елементи li та змінює ім колір фону на сірий
 // let lilist = document.getElementsByTagName('li');
