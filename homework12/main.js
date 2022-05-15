@@ -8,20 +8,21 @@
 //
 // // -- замініть текст параграфа з id 'content' на будь-який інший
 // console.log(contid.innerText = 'Lorem ipsum dolor sit amet.');
-//
+
 // // замініть текст параграфа з id 'rules' на будь-який інший
 // console.log(rulid.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit');
 //
 // // -- змініть кожному елементу колір фону на червоний
-// let colcont = document.getElementById('content')
-// colcont.style.backgroundColor = 'red';
-//
-// let colrul = document.getElementById('rules')
-// colrul.style.background = 'red';
+// let colcont = document.body.children;
+// for (const item of colcont){
+//     item.style.background = 'red'
+// }
 //
 // // -- змініть кожному елементу колір тексту на синій
-// colcont.style.color = 'blue';
-// colrul.style.color = 'blue';
+// let queri = document.querySelectorAll('*');
+// for (const item of queri) {
+//     item.style.color = 'blue'
+// }
 
 // // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
 // let cllist = document.getElementById('rules').classList;
@@ -78,30 +79,33 @@
 // }
 
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-let ullist = document.getElementsByTagName('a');
-for (const item of ullist){
-    item.classList.add(`element_${item.innerText}`)
-}
+// let ullist = document.getElementsByTagName('a');
+// for (const item of ullist){
+//     item.classList.add(`element_${item.innerText}`)
+// }
 
 
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+// let backcol = prompt('color');
 // let subs = document.getElementsByClassName('sub-header');
-// for (const item of subs){
-//     item.style.background = prompt('color');
+// for (const item of subs) {
+//     item.style.background = backcol;
 // }
 
 // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
+// let textcol = prompt('color');
 // let subcol = document.getElementsByClassName('sub-header');
 // for(const item of subcol){
 //     if (item.innerText === 'content 2 segment'){
-//         item.style.background = prompt('color')
+//         item.style.color = textcol;
 //     }
 // }
 
 // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+// let text = prompt('text');
 // let cont = document.getElementsByClassName('content_1');
 // for (const item of cont) {
-//     item.innerText = prompt('text')
+//     item.innerText = text;
 // }
 
 
@@ -112,6 +116,9 @@ for (const item of ullist){
 // }
 
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
-
+// let getelbyclass = document.getElementsByClassName('text2');
+// for (const item of getelbyclass){
+//     item.innerText = 'May-2022'
+// }
 
 
