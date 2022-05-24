@@ -7,6 +7,8 @@
 //
 // button.addEventListener('click', () => {
 //     elementById.remove()
+//     // elementById.style.display = 'none'
+//     // elementById.style.visibility = 'hidden'
 // })
 
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію
@@ -18,12 +20,12 @@
 // const input = document.getElementById('age');
 //
 // button.addEventListener('click', () => {
-//     const value = input.value;
-//     if( value >= 18){
+//         if( input.value >= 18){
 //         alert('you can go on')
-//     } else if (value < 18){
+//     } else if (input.value < 18){
 //         alert('you are too young')
 //     }
+//     input.value = '';
 // })
 
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та
@@ -54,3 +56,46 @@
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+
+const trow = document.getElementById('row');
+const tcolumn = document.getElementById('column');
+const Ttext = document.getElementById('text');
+const button = document.getElementById('button');
+
+button.addEventListener('click', () =>{
+    const tr = trow.value;
+    const td = tcolumn.value;
+    const inputtext = Ttext.value;
+    function table (tr, td, text){
+        const table = document.createElement('table');
+        document.body.append(table);
+        for (let i= 0; i< tr; i++) {
+            const tr = document.createElement('tr');
+            table.appendChild(tr);
+            for (let j = 0; j < td; j++) {
+                const td = document.createElement('td');
+                td.innerText = `${text}`;
+                td.style.background = 'green'
+                td.style.border = '1px solid red'
+                td.style.width = '40px'
+                td.style.height = '20px'
+                tr.appendChild(td);
+            }
+        }
+        }
+
+        table(tr, td, inputtext)
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
