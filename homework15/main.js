@@ -13,13 +13,36 @@
 // -створити форму з інпутами для model,type та volume автівки.
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
 
-const cars = document.forms.car;
+const {model, type, volume} = document.forms.car;
 const button = document.getElementById('but');
-button.addEventListener('click', () =>{
-    const carmodel = cars.model.value;
-    const cartype = cars.type.value;
-    const carvolume = cars.volume.value;
-    const car = [carmodel, cartype, carvolume];
-    // console.log(car)
-    localStorage.setItem('car', JSON.stringify(car))
+
+button.addEventListener('click', () => {
+
+    const carsparse = JSON.parse(localStorage.getItem('cars')) || [];
+    const carmodel = model.value;
+    const cartype = type.value;
+    const carvolume = volume.value;
+    carsparse.push({carmodel, cartype, carvolume});
+    localStorage.setItem('cars', JSON.stringify(carsparse))
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
