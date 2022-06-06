@@ -1,0 +1,15 @@
+.commentblock{
+    font-size: 20px;
+}
+
+.htmlDivElement{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+.arraycomments{
+    width: 19%;
+    border: 1px solid #b7b7d9;
+    border-radius: 5px;
+    background: lavender;
+}
